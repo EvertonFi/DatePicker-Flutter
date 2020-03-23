@@ -4,3 +4,5 @@ Este projeto foi desenvolvido para ajudar aqueles que precisam colocar um calend
 
 ## Preview
 
+![](https://raw.githubusercontent.com/EvertonFi/DatePicker-Flutter/master/img/1.png)
+![](https://raw.githubusercontent.com/EvertonFi/DatePicker-Flutter/master/img/2.png)
