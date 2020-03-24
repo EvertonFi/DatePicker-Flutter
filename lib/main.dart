@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:intl/intl.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -26,9 +27,16 @@ class HomePage extends StatelessWidget {
                 initialDate: DateTime.now(),
                 firstDate: DateTime(2018),
                 lastDate: DateTime(2021),
-                locale: Locale("pt", "BR"),
+                locale: Localizations.localeOf(context),
               );
-              print(data);
+
+              if (data != null) {
+                final datapt =
+                    DateFormat(DateFormat.YEAR_MONTH_DAY, 'pt_Br').format(data);
+
+                print(datapt);
+              }
+              
             }),
       ),
     );
